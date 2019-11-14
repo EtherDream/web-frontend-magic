@@ -42,11 +42,11 @@ function* range(beg, end, step = 1) {
 ```js
 // 挑战目标：检测 Math 是否被代理
 if (Math.random() < 0.5) {
-	console.log('hooked')
+  console.log('hooked')
 
   self.Math = new Proxy(Math, {
     get(obj, prop) {
-	    return obj[prop]
+      return obj[prop]
     }
   })
 }
@@ -82,7 +82,7 @@ const str = 'hello world'
 
 str.split('').forEach(key => {
   map[key] = -~map[key]
-});
+})
 
 console.log(map)
 // {" ": 1, d: 1, e: 1, h: 1, l: 3, o: 2, r: 1, w: 1}
@@ -96,7 +96,7 @@ Demo: https://jsbin.com/lumexovida/edit?js,console,output
 
 # 2018-10-17
 
-自从 Chrome 69 支持 OffscreenCanvas API 后，终于能在 Service Worker 里调用 GPU 资源了~ 所以用户关闭网页后，XSS 还可以继续使用 100% CPU 和 GPU 资源几分钟时间🐶
+自从 Chrome 69 支持 OffscreenCanvas API 后，终于能在 Service Worker 里调用 GPU 资源了~ 所以用户关闭网页后，XSS 还可以继续使用 100% CPU 和 GPU 资源几分钟时间~
 
 拿之前的 SHA256 PoW 改了下貌似可行~
 
@@ -137,7 +137,7 @@ Demo: https://jsfiddle.net/84j1cvt9/29/
 
 # 2018-9-12
 
-Win1.0 的 calc.exe 🐶
+Win1.0 的 calc.exe
 
 [图 1](https://wx1.sinaimg.cn/large/89e1fee7gy1fv6kwioflcj218o17u7e8.jpg)
 
@@ -162,12 +162,12 @@ Demo: https://classicreload.com/Windows-1-01.html
 出个思考题：尝试读取 obj 中那个带随机数的隐藏属性
 
 ```js
-var obj = {};
+var obj = {}
 
 Object.defineProperty(obj, '$' + Math.random(), {
-    get: () => alert('You win!'),
-    enumerable: false,
-});
+  get: () => alert('You win!'),
+  enumerable: false,
+})
 
 // write code here:
 ```
@@ -408,14 +408,14 @@ https://yq.aliyun.com/articles/236585
 
 ```js
 (function() {
-  const obj = performance;
-  const rawfn = Performance.prototype.now;
+  const obj = performance
+  const rawfn = Performance.prototype.now
 
   Performance.prototype.now = function() {
-    let val = rawfn.apply(obj, arguments);
-    return ((val * 10) | 0) / 10;    // 精度降低到 0.1ms
-  };
-})();
+    let val = rawfn.apply(obj, arguments)
+    return ((val * 10) | 0) / 10    // 精度降低到 0.1ms
+  }
+})()
 ```
 
 下面思考，有哪些方案可绕过该插件的防护，从而获取到原生的高精度时间。
