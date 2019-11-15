@@ -293,6 +293,18 @@ nodejs 恶作剧：给系统创建一个叫 `node_modules` 的用户，然后 `n
 
 为了防止被人调试，前端不断执行 debugger 指令，然后检测执行用时 ——  如果控制台开着，debugger 指令会触发断点，用时显然高出平常。于是 JS 会给后端发送日志，然后 IP 就被网站 ban 了。
 
+```js
+setInterval(function() {
+  var t1 = Date.now();
+  debugger;
+  var t2 = Date.now();
+  if (t2 - t1 > 100) {
+    console.log('debug detected');
+    // send_log('ban this ip');
+  }
+}, 500);
+```
+
 简单演示：https://codepen.io/anon/pen/rvPYxR?editors=0010
 
 当然，在经过几次 IP 更换后，很快就摸索出了一个超级简单的规避方案。猜猜是如何实现~
@@ -301,17 +313,18 @@ nodejs 恶作剧：给系统创建一个叫 `node_modules` 的用户，然后 `n
 
 其实非常简单，禁用调试器断点功能就可以，比如 Chrome DevTool 的箭头图标。
 
-不过想要一次成功，还是需要些小技巧的，毕竟刚打开 DevTool 的时候还是会触发 debugger 断下来的（图 3）。
-
-所以正确的打开方式，应该先随便开一个网页（图 4），打开 DevTool 禁用断点，然后再打开想要访问的网页，这时 debugger 就不会触发了（图 5）。
-
-![image](https://user-images.githubusercontent.com/1072787/68911159-08592880-078f-11ea-9db7-a156137b8e44.png)
-
 ![image](https://user-images.githubusercontent.com/1072787/68911162-0a22ec00-078f-11ea-9f3a-46767824050e.png)
+
+
+不过想要一次成功，还是需要些小技巧的，毕竟刚打开 DevTool 的时候还是会触发 debugger 断下来的：
 
 ![image](https://user-images.githubusercontent.com/1072787/68911167-0becaf80-078f-11ea-9346-b2ac0fc1d405.png)
 
+所以正确的打开方式，应该先随便开一个网页，打开 DevTool 禁用断点：
+
 ![image](https://user-images.githubusercontent.com/1072787/68911171-0e4f0980-078f-11ea-83b3-2d4c137b1d7f.png)
+
+然后再打开想要访问的网页，这时 debugger 就不会触发了：
 
 ![image](https://user-images.githubusercontent.com/1072787/68911176-10b16380-078f-11ea-9020-d3480172c6cd.png)
 
