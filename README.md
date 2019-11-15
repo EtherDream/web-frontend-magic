@@ -313,7 +313,7 @@ setInterval(function() {
 
 其实非常简单，禁用调试器断点功能就可以，比如 Chrome DevTool 的箭头图标。
 
-![image](https://user-images.githubusercontent.com/1072787/68911162-0a22ec00-078f-11ea-9f3a-46767824050e.png)
+<img src="https://user-images.githubusercontent.com/1072787/68911162-0a22ec00-078f-11ea-9f3a-46767824050e.png" height="150">
 
 
 不过想要一次成功，还是需要些小技巧的，毕竟刚打开 DevTool 的时候还是会触发 debugger 断下来的：
