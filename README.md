@@ -367,7 +367,7 @@ console.log(win)    // true
 
 思考题：有些 JS 代码混淆后，会变成 `eval(一大坨代码)` 的形式。当然解密也非常容易，把 `eval` 换成 `console.log` 就能原形毕露。
 
-下面请思考，如何在「一大坨代码」中加入陷阱，跟踪有哪些人把 eval 换成了其他的函数？
+下面请思考，如何在「一大坨代码」中加入陷阱，跟踪有哪些人把 `eval` 换成了其他的函数？
 
 答案：https://codepen.io/anon/pen/odMbBX?editors=0010 
 
@@ -391,7 +391,7 @@ https://yq.aliyun.com/articles/236585
 
 相册里翻到个上古时代用 `<SCRIPT LANGUAGE=VBSCRIPT>` 写的魔方小游戏。。。猜猜是用什么黑科技在 IE6 上实现伪 3D 的~
 
-![image](https://user-images.githubusercontent.com/1072787/68911371-bbc21d00-078f-11ea-89e8-8937b8f2411b.png)
+<img src="https://user-images.githubusercontent.com/1072787/68911371-bbc21d00-078f-11ea-89e8-8937b8f2411b.png" height="300">
 
 
 
