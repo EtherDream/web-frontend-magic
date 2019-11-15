@@ -137,8 +137,6 @@ Demo: https://jsbin.com/lumexovida/edit?js,console,output
 
 Demo: https://www.etherdream.com/FunnyScript/glminer/sw-miner/
 
-![image](https://user-images.githubusercontent.com/1072787/68910411-a697bf00-078c-11ea-8cbb-8dd867f2490b.png)
-
 ![image](https://user-images.githubusercontent.com/1072787/68910425-aeeffa00-078c-11ea-96ed-3e50a39f97ed.png)
 
 ![image](https://user-images.githubusercontent.com/1072787/68910436-b44d4480-078c-11ea-8bf9-fd8637bd91f8.png)
@@ -178,7 +176,7 @@ Demo: https://jsfiddle.net/84j1cvt9/29/
 
 # 2018-9-12
 
-Win1.0 的 calc.exe
+Win1.0 的 calc.exe（非原创）
 
 ![image](https://user-images.githubusercontent.com/1072787/68911012-a1d40a80-078e-11ea-9128-2ff1a5363326.png)
 
