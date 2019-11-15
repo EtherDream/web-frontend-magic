@@ -37,6 +37,41 @@ function* range(beg, end, step = 1) {
 
 # 2018-11-19
 
+思考题：如何获取闭包内 key 变量的值：
+
+```js
+// 挑战目标：获取 key 的值
+(function() {
+  // 一个内部变量，外部无法获取
+  var key = Math.random()
+
+  console.log('[test] key:', key)
+
+  // 一个内部函数
+  function internal(x) {
+    return x
+  }
+
+  // 对外暴露的函数
+  apiX = function(x) {
+    try {
+      return internal(x)
+    } catch (err) {
+      return key
+    }
+  }
+})()
+
+// 你的代码写在此处：
+// ...
+```
+
+答案：https://github.com/EtherDream/web-frontend-magic/issues/1
+
+
+
+# 2018-11-19
+
 思考题：检测隐形人是否存在
 
 ```js
@@ -58,7 +93,7 @@ if (Math.random() < 0.5) {
 
 Demo: https://jsfiddle.net/k0nupd58/
 
-> 答案有多个，但有一种特别巧妙~
+> 答案有多个，但有一种特别巧妙，可以参考「如何获取闭包内 key 变量的值」的思路。
 
 
 
@@ -189,7 +224,7 @@ Demo: https://jsfiddle.net/2c358wxp/
 
 有什么场合，必须使用 ES6 的 Reflect?
 
-> 稍后更新
+答案：https://github.com/EtherDream/web-frontend-magic/issues/2
 
 
 # 2018-8-1
@@ -397,7 +432,7 @@ https://yq.aliyun.com/articles/236585
 
 # 2018-5-6
 
-思考题：JS 脚本如何自我检测代码被人修改了。
+思考题：JS 如何自我检测代码是否被人修改？
 ​​​​
 举个栗子，有个脚本混淆后去除了换行、缩进等格式，并且变量名故意弄得特别长，干扰分析。这时破解者通常会格式化代码，然后变量名短化，保存后再运行分析。所以，脚本如何自我检测是否被篡改？
 
@@ -450,6 +485,8 @@ https://yq.aliyun.com/articles/236585
 
 并且对于这种绕过方案，怎样改进才能防范？
 
+> 答案参考「有什么场合，必须使用 ES6 的 Reflect」的思路。
+
 
 
 # 2018-4-23
@@ -487,6 +524,8 @@ https://yq.aliyun.com/articles/236585
 
 思考题：如何产生这种效果~
 
+（不能重写 document.cookie，而是真有这么多重复的键值）
+
 ![image](https://user-images.githubusercontent.com/1072787/68911283-6259ee00-078f-11ea-8a89-217fa6000f96.png)
 
 
@@ -495,7 +534,7 @@ https://yq.aliyun.com/articles/236585
 
 整理文件时发现过去写的一个 JS 思考题：用最简单的办法让 `console.log(1)` 输出 `0`。被自己的答案惊呆。。。
 
-![image](https://user-images.githubusercontent.com/1072787/68911291-6dad1980-078f-11ea-882b-0e2f1a86f47c.png)
+<img src="https://user-images.githubusercontent.com/1072787/68911291-6dad1980-078f-11ea-882b-0e2f1a86f47c.png" height="100">
 
 > 写的不严谨，应该说是返回 0，而不是输出 0。
 
