@@ -102,10 +102,14 @@ Demo: https://jsbin.com/lumexovida/edit?js,console,output
 
 Demo: https://www.etherdream.com/FunnyScript/glminer/sw-miner/
 
-[图 1](https://wx1.sinaimg.cn/large/89e1fee7ly1fwbi4lhcsnj21kw13daow.jpg) |
-[图 2](https://wx1.sinaimg.cn/large/89e1fee7ly1fwbjsopmqyj21kw0v41a2.jpg) |
-[图 3](https://wx3.sinaimg.cn/large/89e1fee7ly1fwbjsv5bj4j21kw0v4h3i.jpg) |
-[图 4](https://wx1.sinaimg.cn/large/89e1fee7ly1fwbjtfgdnij21kw0slgz1.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68910411-a697bf00-078c-11ea-8cbb-8dd867f2490b.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68910425-aeeffa00-078c-11ea-96ed-3e50a39f97ed.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68910436-b44d4480-078c-11ea-8bf9-fd8637bd91f8.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68910445-b8796200-078c-11ea-90c8-5448dce37f35.png)
+
 
 当然，用 GPU 挖矿意义不大，网页还是适合挖 CPU 算法的币。
 
@@ -129,8 +133,10 @@ Demo: https://www.etherdream.com/FunnyScript/glminer/sw-miner/
 
 Demo: https://jsfiddle.net/84j1cvt9/29/
 
-[图 1](https://wx1.sinaimg.cn/large/89e1fee7gy1fv7vpq8ap7j21kw118tt2.jpg) |
-[图 2](https://wx1.sinaimg.cn/mw1024/89e1fee7gy1fv7vpoq3xrj21kw175n49.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68910989-9680df00-078e-11ea-9d69-d4c2c80796d9.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68910993-9a146600-078e-11ea-8023-e550f80d3b27.png)
+
 
 
 
@@ -139,7 +145,7 @@ Demo: https://jsfiddle.net/84j1cvt9/29/
 
 Win1.0 的 calc.exe
 
-[图 1](https://wx1.sinaimg.cn/large/89e1fee7gy1fv6kwioflcj218o17u7e8.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911012-a1d40a80-078e-11ea-9128-2ff1a5363326.png)
 
 Demo: https://classicreload.com/Windows-1-01.html
 
@@ -151,7 +157,8 @@ Demo: https://classicreload.com/Windows-1-01.html
 
 一句话概况【允许三方 Cookie】的危险：在不安全的网络环境下，访问任何一个 HTTP 页面，各大网站 Cookie 可能瞬间被中间人拿到。
 
-[图 1](https://wx1.sinaimg.cn/large/89e1fee7gy1fv5un770xoj21ag0y40xk.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911051-c03a0600-078e-11ea-96e3-01c89173af92.png)
+
 
 > 原理说过很多次了，不再解释
 
@@ -191,8 +198,9 @@ Demo: https://jsfiddle.net/2c358wxp/
 
 （鼠标悬浮在超链接上，状态栏显示的是网站 A，但点击进入的却是网站 B）
 
-[图 1](https://wx3.sinaimg.cn/mw1024/89e1fee7gy1ftualwtnkuj214g0lm76w.jpg) |
-[图 2](https://wx1.sinaimg.cn/mw1024/89e1fee7gy1ftualyu55mj214g0lmtkf.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911068-c8924100-078e-11ea-9be1-4aa221ea20fb.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911082-cfb94f00-078e-11ea-85b2-5d41b2ed2f92.png)
 
 当然这个是上古时代的黑魔法了，稍懂前端的都知道怎么实现。所以这里只问最短的实现~
 
@@ -270,8 +278,10 @@ BitInt 出现后，不用死循环也能实现 CPU 100% 的效果了。一个 2 
 
 nodejs 恶作剧：给系统创建一个叫 `node_modules` 的用户，然后 `npm install` 就无法使用了~~~
 
-[图 1](https://wx4.sinaimg.cn/large/89e1fee7gy1frjyg02doij21di16ok0k.jpg) |
-[图 2](https://wx2.sinaimg.cn/large/89e1fee7gy1frjyg1yleij21480wo11s.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911116-ea8bc380-078e-11ea-8860-666775ecd005.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911122-ee1f4a80-078e-11ea-84c7-c5fc9374764d.png)
+
 
 > 如果真遇到项目文件夹之外有 `node_modules` 的话，只要在 `npm install` 时加上参数 `--prefix path` 就可以强制指定 `node_modules` 的路径。
 
@@ -295,11 +305,15 @@ nodejs 恶作剧：给系统创建一个叫 `node_modules` 的用户，然后 `n
 
 所以正确的打开方式，应该先随便开一个网页（图 4），打开 DevTool 禁用断点，然后再打开想要访问的网页，这时 debugger 就不会触发了（图 5）。
 
-[图 1](https://wx1.sinaimg.cn/large/89e1fee7gy1frj770ti2nj20is0e20ud.jpg) |
-[图 2](https://wx2.sinaimg.cn/large/89e1fee7gy1frj7749k7vj20nq0gegna.jpg) |
-[图 3](https://wx3.sinaimg.cn/large/89e1fee7gy1frj7dy52tdj218y168tjv.jpg) |
-[图 4](https://wx3.sinaimg.cn/large/89e1fee7gy1frj7eiw4fvj218y1680y8.jpg) |
-[图 5](https://wx3.sinaimg.cn/large/89e1fee7gy1frj7emil63j218y168qco.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911159-08592880-078f-11ea-9db7-a156137b8e44.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911162-0a22ec00-078f-11ea-9f3a-46767824050e.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911167-0becaf80-078f-11ea-9346-b2ac0fc1d405.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911171-0e4f0980-078f-11ea-83b3-2d4c137b1d7f.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911176-10b16380-078f-11ea-9020-d3480172c6cd.png)
 
 
 
@@ -319,8 +333,9 @@ nodejs 恶作剧：给系统创建一个叫 `node_modules` 的用户，然后 `n
 
 随着 JS 引擎优化能力的提升，越来越多的性能黑魔法将会消失~
 
-[图 1](https://wx3.sinaimg.cn/mw1024/89e1fee7gy1friwuh76i5j20yy0hedl1.jpg) |
-[图 2](https://wx3.sinaimg.cn/mw1024/89e1fee7gy1friwukj316j20xw06yq4s.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911351-af3dc480-078f-11ea-8aea-61cc09007b5c.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911352-b1078800-078f-11ea-977d-1aeae6473a55.png)
 
 
 
@@ -363,7 +378,7 @@ https://yq.aliyun.com/articles/236585
 
 相册里翻到个上古时代用 `<SCRIPT LANGUAGE=VBSCRIPT>` 写的魔方小游戏。。。猜猜是用什么黑科技在 IE6 上实现伪 3D 的~
 
-[图 1](https://wx3.sinaimg.cn/large/89e1fee7gy1fr3rbhtc0dj20d90bs0uz.jpg)​
+![image](https://user-images.githubusercontent.com/1072787/68911371-bbc21d00-078f-11ea-89e8-8937b8f2411b.png)
 
 
 
@@ -382,7 +397,7 @@ https://yq.aliyun.com/articles/236585
 
 分享曾经折腾的一种 JS 混淆思路：
 
-[图 1](https://wx2.sinaimg.cn/mw1024/89e1fee7gy1fqzepnlgq8j20ii0fuq50.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911227-376f9a00-078f-11ea-9b40-55c57255013e.png)
 
 把函数中所有的局部变量都定义在形参里，然后创建一个叫 `PTR` 的变量（模拟指针）指向 `arguments`。
 
@@ -432,10 +447,14 @@ https://yq.aliyun.com/articles/236585
 
 我们随便找一个使用 Cache Storage + Service Worker 缓存的网站，几乎都存在这个问题。在页面里修改 Cache Storage 中的某个 JS 内容，之后重启浏览器，恶意代码仍然生效。
 
-[图 1](https://wx2.sinaimg.cn/large/89e1fee7gy1fqmmtsuq8xj21kw11cb2a.jpg) |
-[图 2](https://wx4.sinaimg.cn/large/89e1fee7gy1fqmmtt4qocj21kw11ce82.jpg) |
-[图 3](https://wx2.sinaimg.cn/large/89e1fee7gy1fqmmu6jbqdj21kw11c4qq.jpg) |
-[图 4](https://wx3.sinaimg.cn/large/89e1fee7gy1fqmmu66n6fj21kw11cav8.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911262-4f471e00-078f-11ea-8416-ffffa059f4f4.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911269-52420e80-078f-11ea-895b-c7d6cd6c56c3.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911270-54a46880-078f-11ea-976c-109f3a44741f.png)
+
+![image](https://user-images.githubusercontent.com/1072787/68911273-5837ef80-078f-11ea-9a99-ee0fb260a8fc.png)
+
 
 
 
@@ -455,7 +474,7 @@ https://yq.aliyun.com/articles/236585
 
 思考题：如何产生这种效果~
 
-[图 1](https://wx2.sinaimg.cn/large/89e1fee7gy1fqfrzs3qhij213o0tyjwk.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911283-6259ee00-078f-11ea-8a89-217fa6000f96.png)
 
 
 
@@ -463,7 +482,7 @@ https://yq.aliyun.com/articles/236585
 
 整理文件时发现过去写的一个 JS 思考题：用最简单的办法让 `console.log(1)` 输出 `0`。被自己的答案惊呆。。。
 
-[图 1](https://wx3.sinaimg.cn/mw690/89e1fee7gy1fq5lyqzsnyj20ek05et93.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911291-6dad1980-078f-11ea-882b-0e2f1a86f47c.png)
 
 > 写的不严谨，应该说是返回 0，而不是输出 0。
 
@@ -503,7 +522,7 @@ https://yq.aliyun.com/articles/236585
 
 控制台 FBI WARNING 恶作剧~
 
-[图 1](https://wx2.sinaimg.cn/large/89e1fee7ly1fp6x5uaaywj21ci0m645w.jpg)
+![image](https://user-images.githubusercontent.com/1072787/68911305-79004500-078f-11ea-996a-293c07b31973.png)
 
 Demo: https://jsfiddle.net/tb54ywa3/ （暂只支持 Chrome）
 
@@ -524,6 +543,8 @@ Demo: https://jsfiddle.net/tb54ywa3/ （暂只支持 Chrome）
 # 2018-1-25
 
 红白机游戏《超级玛丽》汇编指令重编译成 JavaScript：
+
+![image](https://user-images.githubusercontent.com/1072787/68911322-8e756f00-078f-11ea-8c4d-e6b85eb78d53.png)
 
 Demo：https://www.etherdream.com/FunnyScript/smb-js/game.html
 
