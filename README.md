@@ -483,7 +483,7 @@ https://yq.aliyun.com/articles/236585
 
 并且对于这种绕过方案，怎样改进才能防范？
 
-> 答案参考「有什么场合，必须使用 ES6 的 Reflect」的思路。
+> 答案参考「有什么场合，必须使用 ES6 的 Reflect」的思路。另外，`new Event(0).timeStamp` 也可以获取高精度时间。
 
 
 
@@ -503,6 +503,15 @@ https://yq.aliyun.com/articles/236585
 
 ![image](https://user-images.githubusercontent.com/1072787/68911273-5837ef80-078f-11ea-9a99-ee0fb260a8fc.png)
 
+
+
+# 2018-4-19
+
+尝试用指令 + 寄存器的思路，在 WebAssembly 中操作 JS 和 DOM~
+
+![image](https://user-images.githubusercontent.com/1072787/68986481-bda4e280-085a-11ea-8c64-dfc1d2111d45.png)
+
+Demo: https://webassembly.studio/?f=mxnrb7oofth
 
 
 
@@ -526,6 +535,7 @@ https://yq.aliyun.com/articles/236585
 
 ![image](https://user-images.githubusercontent.com/1072787/68911283-6259ee00-078f-11ea-8a89-217fa6000f96.png)
 
+[Demo](https://www.etherdream.com/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/multi_cookie.html)
 
 
 # 2018-4-8
@@ -601,6 +611,6 @@ Demo：https://www.etherdream.com/FunnyScript/smb-js/game.html
 原理：https://www.cnblogs.com/index-html/p/6492418.html
 
 
-# 更早
+# 2017
 
-即将更新...
+[2017.md](https://github.com/EtherDream/web-frontend-magic/blob/master/2017.md)
