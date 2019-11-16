@@ -439,7 +439,7 @@ https://yq.aliyun.com/articles/236585
 # 2018-5-6
 
 思考题：JS 如何自我检测代码是否被人修改？
-​​​​
+
 举个栗子，有个脚本混淆后去除了换行、缩进等格式，并且变量名故意弄得特别长，干扰分析。这时破解者通常会格式化代码，然后变量名短化，保存后再运行分析。所以，脚本如何自我检测是否被篡改？
 
 ----
@@ -451,7 +451,21 @@ https://yq.aliyun.com/articles/236585
 
 分享曾经折腾的一种 JS 混淆思路：
 
-<img src="https://user-images.githubusercontent.com/1072787/68911227-376f9a00-078f-11ea-9b40-55c57255013e.png" height="250">
+```js
+(function(id, name, age, lang) {
+  var PTR = arguments
+
+  console.log(id, name, age, lang)  // 1001 "alice" 20 "en"
+
+  PTR[0] = 1002
+  PTR[1] = 'bob'
+  PTR[2] = 30
+  PTR[3] = 'us'
+
+  console.log(id, name, age, lang)  // 1002 "bob" 30 "us"
+
+})(1001, 'alice', 20, 'en')
+```
 
 把函数中所有的局部变量都定义在形参里，然后创建一个叫 `PTR` 的变量（模拟指针）指向 `arguments`。
 
