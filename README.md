@@ -26,7 +26,7 @@ for (const i of range(0, 5)) {
 }
 
 function* range(beg, end, step = 1) {
-  for (let i = 0; i < end; i += step)
+  for (let i = beg; i < end; i += step)
     yield i
 }
 ```
@@ -181,6 +181,8 @@ Win1.0 的 calc.exe（非原创）
 ![image](https://user-images.githubusercontent.com/1072787/68911012-a1d40a80-078e-11ea-9128-2ff1a5363326.png)
 
 Demo: https://classicreload.com/Windows-1-01.html
+
+> Win1.0 只比 Win10 差一点而已~ 
 
 
 
@@ -379,21 +381,23 @@ setInterval(function() {
 
 随着 JS 引擎优化能力的提升，越来越多的性能黑魔法将会消失~
 
-![image](https://user-images.githubusercontent.com/1072787/68911351-af3dc480-078f-11ea-8aea-61cc09007b5c.png)
+<img src="https://user-images.githubusercontent.com/1072787/68911351-af3dc480-078f-11ea-8aea-61cc09007b5c.png" height="250">
 
-![image](https://user-images.githubusercontent.com/1072787/68911352-b1078800-078f-11ea-977d-1aeae6473a55.png)
+<img src="https://user-images.githubusercontent.com/1072787/68911352-b1078800-078f-11ea-977d-1aeae6473a55.png" height="100">
 
 
 
 # 2018-5-15
 
-思考题：定义 x 使得满足条件判断，字数越少越好。目前我的答案是 29 个字符，看看有没有更短的~
+思考题：定义 x 使得满足条件判断，字数越少越好。目前我的答案是 28 个字符，看看有没有更短的~
 
 ```js
 const x = _______
 const win = ('a' in x) && !('a' in x)
 console.log(win)    // true
 ```
+
+答案：https://jsfiddle.net/r6gk1ob8/
 
 
 # 2018-5-14
@@ -426,6 +430,10 @@ https://yq.aliyun.com/articles/236585
 
 <img src="https://user-images.githubusercontent.com/1072787/68911371-bbc21d00-078f-11ea-89e8-8937b8f2411b.png" height="300">
 
+演示：https://www.etherdream.com/creative/BaiduCube.html
+
+> DXImageTransform.Microsoft.Matrix。当年硬着头皮用初中数学知识琢磨 Martix 的计算规律，陆续花了几个月才写出来~
+
 
 
 # 2018-5-6
@@ -443,7 +451,7 @@ https://yq.aliyun.com/articles/236585
 
 分享曾经折腾的一种 JS 混淆思路：
 
-![image](https://user-images.githubusercontent.com/1072787/68911227-376f9a00-078f-11ea-9b40-55c57255013e.png)
+<img src="https://user-images.githubusercontent.com/1072787/68911227-376f9a00-078f-11ea-9b40-55c57255013e.png" height="250">
 
 把函数中所有的局部变量都定义在形参里，然后创建一个叫 `PTR` 的变量（模拟指针）指向 `arguments`。
 
