@@ -257,7 +257,7 @@ location.protocol = 'https:'
 
 # 2018-7-27
 
-一种检测 HTTPS 中间人降级攻击的猥琐思路~ ​​​​
+一种检测 HTTPS 中间人降级攻击的猥琐思路~
 
 ```html
 <script>
@@ -273,7 +273,7 @@ location.protocol = 'https:'
 
 
 
-# ​​​​2018-7-26
+# 2018-7-26
 
 由于大部分用户都不会开启浏览器 `Do Not Track`，因此少数开了的用户反而成了另类，被用于浏览器指纹特征了。。。
 
@@ -281,7 +281,7 @@ location.protocol = 'https:'
 
 # 2018-7-20
 
-思考题：在 JS 中用 0 0 0 0 四个常量计算 24。只能用符号，表达式越短越好~ ​​​​
+思考题：在 JS 中用 0 0 0 0 四个常量计算 24。只能用符号，表达式越短越好~
 
 > 目前已知最短的答案 14 字符。https://jsfiddle.net/qLo2jg7x/
 
@@ -599,7 +599,7 @@ Demo: https://webassembly.studio/?f=mxnrb7oofth
 并且动态创建的脚本也支持 source map url，所以 url query 里还可以加上用户相关的参数，跟踪哪些人开了控制台~
 
 
- ​​​​
+
 # 2018-3-9
 
 控制台 FBI WARNING 恶作剧~
