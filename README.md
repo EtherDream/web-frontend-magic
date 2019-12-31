@@ -112,18 +112,17 @@ Demo: https://www.etherdream.com/FunnyScript/cpu-hog/
 一种统计 key 的个数，无需使用判断的写法：
 
 ```js
-const map = {}
 const str = 'hello world'
 
-str.split('').forEach(key => {
-  map[key] = -~map[key]
-})
+const map = str.split('').reduce((prev, next) => {
+  prev[next] = -~prev[next];
+  return prev;
+}, {});
 
 console.log(map)
-// {" ": 1, d: 1, e: 1, h: 1, l: 3, o: 2, r: 1, w: 1}
 ```
 
-Demo: https://jsbin.com/lumexovida/edit?js,console,output
+Demo: https://jsbin.com/cudarij/edit?js,console,output
 
 > ~i = -(i + 1)，~undefined = -1
 
