@@ -215,13 +215,15 @@ Object.defineProperty(obj, '$' + Math.random(), {
 var obj = {};
 
 Object.defineProperty(obj, '$' + Math.random(), {
-    get: () => alert('You win!'),
-    enumerable: false,
+  get: () => alert('You win!'),
+  enumerable: false,
 });
 
 // write code here:
+// 答案 1
 obj[Object.keys(Object.getOwnPropertyDescriptors(obj))[0]];
 
+// 答案 2
 obj[Reflect.ownKeys(obj)[0]];
 ```
 
@@ -653,11 +655,26 @@ Demo: https://webassembly.studio/?f=mxnrb7oofth
 
 思考题：如何产生这种效果~
 
-（不能重写 document.cookie，而是真有这么多重复的键值）
-
 ![image](https://user-images.githubusercontent.com/1072787/68911283-6259ee00-078f-11ea-8a89-217fa6000f96.png)
 
+> 不能重写 document.cookie，而是真有这么多重复的键值
+
 [Demo](https://www.etherdream.com/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/multi_cookie.html)
+
+<details>
+<summary>点击查看答案</summary>
+
+```js
+var str = 'a=1; path=';
+for (var i = 0; i < 100; i++) {
+  str += '/x';
+  document.cookie = str;
+}
+
+alert('cookie:' + document.cookie);
+```
+</details>
+
 
 
 # 2018-4-8
