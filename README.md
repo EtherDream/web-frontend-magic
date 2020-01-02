@@ -256,6 +256,15 @@ https://github.com/EtherDream/web-frontend-magic/issues/2
 
 目前想到的是 55 字符（包括目标域名）：https://www.etherdream.com/FunnyScript/statusbar_spoof_2.html
 
+<details>
+<summary>点击查看答案</summary>
+
+```html
+<a href=//www.tmall.com onclick=host='jd.com'>tmall</a>
+```
+</details>
+
+
 ----
 
 讲解：超链接和 `location` 很像，都有 `href`、`host` 等 URL 属性。不少人以为只有 `href` 属性可赋值，事实上其他属性也可以。
@@ -373,7 +382,8 @@ setInterval(function() {
 
 当然，在经过几次 IP 更换后，很快就摸索出了一个超级简单的规避方案。猜猜是如何实现~
 
-----
+<details>
+<summary>点击查看答案</summary>
 
 其实非常简单，禁用调试器断点功能就可以，比如 Chrome DevTool 的箭头图标。
 
@@ -391,7 +401,7 @@ setInterval(function() {
 然后再打开想要访问的网页，这时 debugger 就不会触发了：
 
 ![image](https://user-images.githubusercontent.com/1072787/68911176-10b16380-078f-11ea-9020-d3480172c6cd.png)
-
+</details>
 
 
 # 2018-5-21
@@ -517,9 +527,12 @@ https://yq.aliyun.com/articles/236585
 
 举个栗子，有个脚本混淆后去除了换行、缩进等格式，并且变量名故意弄得特别长，干扰分析。这时破解者通常会格式化代码，然后变量名短化，保存后再运行分析。所以，脚本如何自我检测是否被篡改？
 
-----
+<details>
+<summary>点击查看答案</summary>
 
 分享之前写的一个 PPT[《前端加密与混淆》](https://github.com/EtherDream/myppt/blob/master/%E5%89%8D%E7%AB%AF%E5%8A%A0%E5%AF%86%E4%B8%8E%E6%B7%B7%E6%B7%86.pdf)，其中提到 JS 如何检测自身模块是否被篡改。以及检测到异常情况后，该如何优雅的让程序逐渐错误，而不是立即崩溃~
+</details>
+
 
 
 # 2018-5-4
@@ -614,9 +627,13 @@ https://yq.aliyun.com/articles/236585
 
 尝试用指令 + 寄存器的思路，在 WebAssembly 中操作 JS 和 DOM~
 
-![image](https://user-images.githubusercontent.com/1072787/68986481-bda4e280-085a-11ea-8c64-dfc1d2111d45.png)
-
 Demo: https://webassembly.studio/?f=mxnrb7oofth
+
+<details>
+<summary>点击预览图片</summary>
+
+![image](https://user-images.githubusercontent.com/1072787/68986481-bda4e280-085a-11ea-8c64-dfc1d2111d45.png)
+</details>
 
 
 
