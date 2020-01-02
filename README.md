@@ -10,7 +10,7 @@
 
 # 2019
 
-整理中...
+整理中，即将更新...
 
 下面大多从 weibo 搬运过来，账号 @EtherDream 去年被禁言，以后在此更新。表情符已替换成 `~`（大部分可脑补成狗头）
 
@@ -66,8 +66,11 @@ function* range(beg, end, step = 1) {
 // ...
 ```
 
-答案：https://github.com/EtherDream/web-frontend-magic/issues/1
+<details>
+<summary>点击查看答案</summary>
 
+https://github.com/EtherDream/web-frontend-magic/issues/1
+</details>
 
 
 # 2018-11-19
@@ -91,9 +94,11 @@ if (Math.random() < 0.5) {
 // ...
 ```
 
-Demo: https://jsfiddle.net/k0nupd58/
+<details>
+<summary>点击查看答案</summary>
 
-> 答案有多个，但有一种特别巧妙，可以参考「如何获取闭包内 key 变量的值」的思路。
+答案有多个，但有一种特别巧妙，可以参考 [如何获取闭包内 key 变量的值](https://github.com/EtherDream/web-frontend-magic/issues/1) 的思路。
+</details>
 
 
 
@@ -137,12 +142,15 @@ Demo: https://jsbin.com/lumexovida/edit?js,console,output
 
 Demo: https://www.etherdream.com/FunnyScript/glminer/sw-miner/
 
+<details>
+<summary>点击预览图片</summary>
+
 ![image](https://user-images.githubusercontent.com/1072787/68910425-aeeffa00-078c-11ea-96ed-3e50a39f97ed.png)
 
 ![image](https://user-images.githubusercontent.com/1072787/68910436-b44d4480-078c-11ea-8bf9-fd8637bd91f8.png)
 
 ![image](https://user-images.githubusercontent.com/1072787/68910445-b8796200-078c-11ea-90c8-5448dce37f35.png)
-
+</details>
 
 当然，用 GPU 挖矿意义不大，网页还是适合挖 CPU 算法的币。
 
@@ -157,20 +165,6 @@ Demo: https://www.etherdream.com/FunnyScript/glminer/sw-miner/
 思考题：如何实现一个网页版的 CPU 跑分程序，并且带有用户排行榜功能。（重点是确保用户不易作弊，比如自定义提交成绩；以及不能使用多核 CPU 甚至 GPU 来加速，只拼单核性能）
 
 > 哪些密码学算法是无法利用多线程加速的，并且能在网页里高效率运行？
-
-
-
-# 2018-9-13
-
-《大航海时代 2》风格的 Google Map
-
-Demo: https://jsfiddle.net/84j1cvt9/29/
-
-![image](https://user-images.githubusercontent.com/1072787/68910989-9680df00-078e-11ea-9d69-d4c2c80796d9.png)
-
-![image](https://user-images.githubusercontent.com/1072787/68910993-9a146600-078e-11ea-8023-e550f80d3b27.png)
-
-
 
 
 
@@ -214,9 +208,26 @@ Object.defineProperty(obj, '$' + Math.random(), {
 // write code here:
 ```
 
-Demo: https://jsfiddle.net/2c358wxp/
+<details>
+<summary>点击查看答案</summary>
 
-> 有多个答案
+```js
+var obj = {};
+
+Object.defineProperty(obj, '$' + Math.random(), {
+    get: () => alert('You win!'),
+    enumerable: false,
+});
+
+// write code here:
+obj[Object.keys(Object.getOwnPropertyDescriptors(obj))[0]];
+
+obj[Reflect.ownKeys(obj)[0]];
+```
+
+想想还有没有更多答案~
+
+</details>
 
 
 
@@ -224,7 +235,11 @@ Demo: https://jsfiddle.net/2c358wxp/
 
 有什么场合，必须使用 ES6 的 Reflect?
 
-答案：https://github.com/EtherDream/web-frontend-magic/issues/2
+<details>
+<summary>点击查看答案</summary>
+
+https://github.com/EtherDream/web-frontend-magic/issues/2
+</details>
 
 
 # 2018-8-1
@@ -281,10 +296,21 @@ location.protocol = 'https:'
 
 # 2018-7-20
 
-思考题：在 JS 中用 0 0 0 0 四个常量计算 24。只能用符号，表达式越短越好~
+思考题：在 JS 中用 0 0 0 0 四个常量计算 24，只能用符号，表达式越短越好。例如：
 
-> 目前已知最短的答案 14 字符。https://jsfiddle.net/qLo2jg7x/
+```js
+-~-~-~0<<-~0-~0-~0    // 24
+```
 
+目前已知最短 14 个字符~
+
+<details>
+<summary>点击查看答案</summary>
+
+```js
+!0-~!0<<!0-~!0      // 24
+```
+</details>
 
 
 # 2018-6-6
@@ -313,10 +339,13 @@ BitInt 出现后，不用死循环也能实现 CPU 100% 的效果了。一个 2 
 
 nodejs 恶作剧：给系统创建一个叫 `node_modules` 的用户，然后 `npm install` 就无法使用了~~~
 
+<details>
+<summary>点击预览图片</summary>
+
 ![image](https://user-images.githubusercontent.com/1072787/68911116-ea8bc380-078e-11ea-8860-666775ecd005.png)
 
 ![image](https://user-images.githubusercontent.com/1072787/68911122-ee1f4a80-078e-11ea-84c7-c5fc9374764d.png)
-
+</details>
 
 > 如果真遇到项目文件夹之外有 `node_modules` 的话，只要在 `npm install` 时加上参数 `--prefix path` 就可以强制指定 `node_modules` 的路径。
 
@@ -389,7 +418,7 @@ setInterval(function() {
 
 # 2018-5-15
 
-思考题：定义 x 使得满足条件判断，字数越少越好。目前我的答案是 28 个字符，看看有没有更短的~
+思考题：定义 x 使得满足条件判断，字数越少越好。
 
 ```js
 const x = _______
@@ -397,7 +426,18 @@ const win = ('a' in x) && !('a' in x)
 console.log(win)    // true
 ```
 
-答案：https://jsfiddle.net/r6gk1ob8/
+目前已知最短 28 个字符~
+
+<details>
+<summary>点击查看答案</summary>
+
+```js
+const x = new Proxy(T=_=>T^=1,{has:T})
+const win = ('a' in x) && !('a' in x)
+alert(win)    // true
+```
+</details>
+
 
 
 # 2018-5-14
@@ -406,9 +446,44 @@ console.log(win)    // true
 
 下面请思考，如何在「一大坨代码」中加入陷阱，跟踪有哪些人把 `eval` 换成了其他的函数？
 
-答案：https://codepen.io/anon/pen/odMbBX?editors=0010 
+<details>
+<summary>点击查看答案</summary>
 
-（`eval` 换成 `console.log` 即可触发陷阱）
+```js
+eval( (function() {    // 换成 console.log 试试
+
+	// 解码程序
+	var code = [
+  	'ZG9jdW1lbnQuYm9keS5pbm',
+    '5lckhUTUwgPSAnc2NyaXB0',
+    'IHJ1bm5pbmcgLi4uJzs='
+   ];
+
+	code = atob(code.join(''));
+
+  // 此外省略几百行...
+  
+	// 埋一个陷阱
+  T = setTimeout(function() {
+    alert('哈哈，你掉进陷阱里了！');
+
+    // 本地存储里隐写一个标记，长期跟踪
+    // 释放 CSRF 漏洞，获取你的隐私~
+    // 或者，开启自毁程序 ...
+    
+  }, 0);
+
+  // 此外省略几百行...
+
+  // 解码程序
+  code += 'clearTimeout(T)';
+  
+  // 此外省略几百行...
+  
+  return code;
+})() );
+```
+</details>
 
 
 
@@ -505,8 +580,13 @@ https://yq.aliyun.com/articles/236585
 
 并且对于这种绕过方案，怎样改进才能防范？
 
-> 答案参考「有什么场合，必须使用 ES6 的 Reflect」的思路。另外，`new Event(0).timeStamp` 也可以获取高精度时间。
+<details>
+<summary>点击查看答案</summary>
 
+参考 [有什么场合，必须使用 ES6 的 Reflect](https://github.com/EtherDream/web-frontend-magic/issues/2) 的思路。
+
+另外，`new Event(0).timeStamp` 也可以获取高精度时间。
+</details>
 
 
 # 2018-4-23
@@ -517,6 +597,9 @@ https://yq.aliyun.com/articles/236585
 
 我们随便找一个使用 Cache Storage + Service Worker 缓存的网站，几乎都存在这个问题。在页面里修改 Cache Storage 中的某个 JS 内容，之后重启浏览器，恶意代码仍然生效。
 
+<details>
+<summary>点击预览图片</summary>
+
 ![image](https://user-images.githubusercontent.com/1072787/68911262-4f471e00-078f-11ea-8416-ffffa059f4f4.png)
 
 ![image](https://user-images.githubusercontent.com/1072787/68911269-52420e80-078f-11ea-895b-c7d6cd6c56c3.png)
@@ -524,7 +607,7 @@ https://yq.aliyun.com/articles/236585
 ![image](https://user-images.githubusercontent.com/1072787/68911270-54a46880-078f-11ea-976c-109f3a44741f.png)
 
 ![image](https://user-images.githubusercontent.com/1072787/68911273-5837ef80-078f-11ea-9a99-ee0fb260a8fc.png)
-
+</details>
 
 
 # 2018-4-19
@@ -564,9 +647,14 @@ Demo: https://webassembly.studio/?f=mxnrb7oofth
 
 整理文件时发现过去写的一个 JS 思考题：用最简单的办法让 `console.log(1)` 输出 `0`。被自己的答案惊呆。。。
 
+<details>
+<summary>点击查看答案</summary>
+
 <img src="https://user-images.githubusercontent.com/1072787/68911291-6dad1980-078f-11ea-882b-0e2f1a86f47c.png" height="100">
 
 > 写的不严谨，应该说是返回 0，而不是输出 0。
+
+</details>
 
 
 
@@ -607,6 +695,34 @@ Demo: https://webassembly.studio/?f=mxnrb7oofth
 ![image](https://user-images.githubusercontent.com/1072787/68911305-79004500-078f-11ea-996a-293c07b31973.png)
 
 Demo: https://jsfiddle.net/tb54ywa3/ （暂只支持 Chrome）
+
+<details>
+<summary>SHOW ME THE CODE</summary>
+
+```js
+console.log(`%c                                                                            
+                                                                            
+                                                                            
+                               %c FBI WARNING %c                                
+                                                                            
+                                                                            
+%c        Federal Law provides severe civil and criminal penalties for        
+        the unauthorized reproduction,distribution, or exhibition of        
+         copyrighted motion pictures (Title 17, United States Code,         
+        Sections 501 and 508). The Federal Bureau of Investigation          
+         investigates allegations of criminal copyright infringement        
+                 (Title 17, United States Code, Section 506).               
+                                                                            
+                                                                            
+                                                                            
+`,
+'background: #000; font-size: 18px; font-family: monospace',
+'background: #f33; font-size: 18px; font-family: monospace; color: #eee; text-shadow:0 0 1px #fff',
+'background: #000; font-size: 18px; font-family: monospace',
+'background: #000; font-size: 18px; font-family: monospace; color: #ddd; text-shadow:0 0 2px #fff'
+)
+```
+</details>
 
 
 
